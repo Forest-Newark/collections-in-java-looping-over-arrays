@@ -18,6 +18,13 @@ public class ArrayKatas {
      * @return the sum of the provided array of doubles
      */
     // todo: create sumArray() method
+    public static double sumArray(double[] numbers) {
+        double sum = 0;
+        for(double number : numbers) {
+            sum += number;
+        }
+        return sum;
+    }
 
     /**
      * Create a static method named concatenateStrings() that accepts an array
@@ -31,6 +38,13 @@ public class ArrayKatas {
      * @return a concatenation of the provided array of strings.
      */
     // todo: create concatenateStrings() method
+    public static String concatenateStrings(String[] strings) {
+        String catString= "";
+        for(int x = 0; x <strings.length ; x++) {
+            catString+=strings[x];
+        }
+        return catString;
+    }
 
     /**
      * Create a static method named reverseArray that accepts an array of
@@ -52,5 +66,14 @@ public class ArrayKatas {
      * @return an array of objects in reverse order
      */
     // todo: create reverseArray() method
+    public static Object[] reverseArray(Object[] objects) {
+        Object[] newArray = new Object[objects.length];
+        int arrayCount = 0;
+        for(int x = objects.length-1; x >=0;x--) {
+            newArray[arrayCount] = objects[x];
+            arrayCount++;
+        }
+        return newArray;
+    }
 
 }
